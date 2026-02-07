@@ -105,15 +105,12 @@
     margin-right: 7em;
 }
 
-.chat-message-top {
-    border-bottom-left-radius: 0.25em;
-}
-
+.chat-message-top,
 .chat-message-middle {
     border-bottom-left-radius: 0.25em;
-    border-top-left-radius: 0.25em;
 }
 
+.chat-message-middle,
 .chat-message-bottom {
     border-top-left-radius: 0.25em;
 }
