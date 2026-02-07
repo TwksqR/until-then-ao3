@@ -64,6 +64,7 @@
     width: 4em;
 }
 
+/* TODO: Use last-child or something to remove the top, middle, and bottom specification*/
 .texter-body {
 }
 
