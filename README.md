@@ -20,6 +20,6 @@ When using an image from Dropbox, there will be a `dl=0` tag at the end of the U
 
 # Fonts
 
-You can apply any font downloaded onto your device to your chats. In `styles.css` under `.phone` `font-family`, add the name of your desired font to the list. Fonts are prioritized left-to-right, and a certain font is not available on your device, the next font will be used instead, and so forth. If your font name contains a space, you will need to add double quotes ("") around the font name.
+You can apply any font downloaded onto your device to your chats. In `styles.css` under `.phone` `font-family`, add the name of your desired font to the list. Fonts are prioritized left-to-right, and if a certain font is not available on your device, the next font will be used instead, and so forth. If your font name contains a space, you will need to add double quotes ("") around the font name.
 
 The font used in Until Then's actual chats is **PT Sans**. You can download it [here](https://fonts.google.com/specimen/PT+Sans).
