@@ -4,7 +4,7 @@
 
 # Documentation and How to Use
 
-You can use Visual Studio Code and install the extension "HTML CSS Support". In your current folder, download `styles.css` and add your code in an `.html` file. Once done, press the "Go Live" button in the bottom right to start the server. A tab will open in your browser.
+You can use Visual Studio Code. Create a new folder, download `styles.css` and create an `.html` file. Once your code is done, press the "Go Live" button in the bottom right to start the server. A tab will open in your browser.
 
 Unfortunately, it doesn't seem that this workskin can be put inline into AO3 works given the pretty annoying HTML auto-formatter that adds `p` tags around every. single. line. Even when there's already a `div` tag. Ugh. As a workaround, you can take screenshots of the website.
 
