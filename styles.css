@@ -1,31 +1,48 @@
-.phone {
+.unrounded[class|="phone"] {
+    border-radius: 0;
+}
+
+[class|="phone"] {
     display: block;
     font-family: "PT Sans", Arial, Helvetica, sans-serif;
     margin: auto;
-    max-width: 28em;
+    max-width: 21.5em;
+    border-radius: 2em;
 }
 
-.chat {
-    background-color: #000000;
+.phone-chat {
+    background-color: black;
     display: flex;
     flex-direction: column;
     padding: 2em;
+}
+
+.fixed[class|="phone"] {
+    height: 44em;
 }
 
 .chat-header {
     position: relative;
 }
 
+.chat-header::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1em;
+    margin-top: 1em;
+    background-image: linear-gradient(black, transparent);
+}
+
 .chat-header-center {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1em;
     margin-top: -0.75em;
 }
 
 .chat-ui-button-back {
-    height: 1.25em;
+    height: 1.2em;
     left: 0.5em;
     position: absolute;
     top: 0.25em;
@@ -33,7 +50,7 @@
 }
 
 .chat-ui-button-info {
-    height: 1.75em;
+    height: 1.5em;
     position: absolute;
     right: 0.5em;
     top: 0.25em;
@@ -43,14 +60,56 @@
 .chat-body {
     display: flex;
     flex-direction: column;
+    margin-top: -1.2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     gap: 0.75em;
+
+    overflow-x: visible; /* For identifying bugs, shouldn't do anything in working condition */
+    overflow-y: hidden;
+}
+
+.chat-footer div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.75em;
+    align-items: center;
+}
+
+.chat-footer::before {
+    grid-area: gradient;
+    content: "";
+    display: block;
+    height: 1em;
+    margin-top: -1em;
+    background-image: linear-gradient(transparent, green);
+}
+
+.chat-textbox {
+    grid-area: textbox;
+    width: 100%;
+    color: #a0a0a0;
+    border: #29312c, solid, 0.15em;
+    border-radius: 1.1em;
+    padding: 0.8em 1em;
+}
+
+.chat-ui-button-send-message {
+    grid-area: button;
+    height: 2em;
+}
+
+.scrollable {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    overflow-y: auto;
 }
 
 .chat-name {
     color: #FFFFFF;
     font-size: 1.25em;
     font-weight: bold;
-    margin-top: 0.4em;
+    margin: 0.4em 0 0.4em;
 }
 
 .chat-activity-status {
@@ -64,104 +123,92 @@
     width: 4em;
 }
 
-/* TODO: Use last-child or something to remove the top, middle, and bottom specification*/
-.texter-body {
+.texter-gc {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        ". name"
+        "icon body";
+    column-gap: 0.5em;
+    row-gap: 0.25em;
+    justify-content: start;
 }
 
-.texter-gc {
-    display: flex;
-    gap: 0.5em;
+[class|="message-body"] {
+    grid-area: body;
+}
+
+[class|="message-body"] p {
+    display: inline-block;
+    clear: both;
+    border-radius: 1.1em;
+    padding: 0.7em 1em;
+    margin: 0;
+    background-color: #F0F0F0;
+    color: #000000;
+    line-height: 1.4em;
+}
+
+[class|="message-body"] img {
+    border-radius: 1.1em;
+    max-width: 15.5em;
+    max-height: 100%;
+}
+
+[class|="message-body"] :not(:last-child):not(.texter-name) {
+    margin-bottom: 0.25em;
+}
+
+.message-body * {
+    float: left;
+}
+
+.message-body p {
+    max-width: 12em;
+}
+
+.message-body p:not(:last-child) {
+    border-bottom-left-radius: 0.25em;
+}
+
+.message-body p:not(:first-child) {
+    border-top-left-radius: 0.25em;
+}
+
+.message-body-right * {
+    float: right;
+}
+
+.message-body-right p {
+    max-width: 14.25em;
+    background-color: #0099ff;
+    color: #ffffff;
+}
+
+.message-body-right p:not(:last-child) {
+    border-bottom-right-radius: 0.25em;
+}
+
+.message-body-right p:not(:first-child) {
+    border-top-right-radius: 0.25em;
 }
 
 .texter-name {
     color: #FFFFFF;
     margin-left: 1em;
+    grid-area: name;
 }
 
 .texter-icon {
     align-self: end;
     border-radius: 5em;
     height: 2.4em;
-    margin-left: 0.2em;
+    margin-left: 0.2em; /* Why does this exist? */
     width: 2.4em;
+    grid-area: icon;
 }
 
-[class|="chat-message"] {
-    border-radius: 1.1em;
-    padding: 0.7em 1em;
-}
-
-[class="texter-body"] > [class$="middle"],
-[class="texter-body"] > [class$="bottom"] {
-    margin-top: 0.25em;
-}
-
-.chat-message,
-.chat-message-top,
-.chat-message-middle,
-.chat-message-bottom {
-    background-color: #f0f0f0;
-    color: #000000;
-    float: left;
-    margin-right: 7em;
-}
-
-.chat-message-top,
-.chat-message-middle {
-    border-bottom-left-radius: 0.25em;
-}
-
-.chat-message-middle,
-.chat-message-bottom {
-    border-top-left-radius: 0.25em;
-}
-
-.chat-message-blue,
-.chat-message-blue-top,
-.chat-message-blue-middle,
-.chat-message-blue-bottom {
-    background-color: #0198ff;
-    color: #ffffff;
-    float: right;
-    margin-left: 8.5em;
-}
-
-.chat-message-blue-top {
-    border-bottom-right-radius: 0.25em;
-}
-
-.chat-message-blue-middle {
-    border-bottom-right-radius: 0.25em;
-    border-top-right-radius: 0.25em;
-}
-
-.chat-message-blue-bottom {
-    border-top-right-radius: 0.25em;
-}
-
-[class|="chat-image"] {
-    border-radius: 1.1em;
-}
-
-.chat-image-left {
-    float: left;
-    width: 15.5em;
-    max-height: 100%;
-}
-
-.chat-image-left-gc {
-    float: left;
-    max-width: 15.5em;
-    max-height: 100%;
-}
-
-.chat-image-right {
-    float: right;
-    max-width: 15.5em;
-    max-height: 100%;
-}
-
-.chat-action {
+.chat-actions {
     color: #7B7C80;
     text-align: center;
 }
@@ -176,7 +223,7 @@
 }
 
 .chat-read-receipt-left-gc {
-    margin-left: 4em;
+    margin-left: 3.75em;
     text-align: left;
 }
 
