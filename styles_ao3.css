@@ -1,0 +1,264 @@
+.unrounded[class|="phone"] {
+    border-radius: 0;
+}
+
+[class|="phone"] {
+    display: block;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    margin: auto;
+    max-width: 21.5em;
+    border-radius: 2em;
+}
+
+.scrollable[class|="phone"] {
+    height: 44em;
+}
+
+.scrollable > .chat-body {
+    scrollbar-width: none;
+    overflow-y: scroll;
+    padding-bottom: 1em;
+}
+
+:not(.scrollable) > .chat-footer {
+    margin-top: 1em;
+}
+
+.phone-chat {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.chat-header {
+    position: relative;
+    margin-bottom: -0.25em;
+}
+
+.chat-header * {
+    margin: 0;
+}
+
+.chat-header::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1em;
+    margin-top: 1em;
+    background-image: linear-gradient(black, transparent);
+}
+
+.chat-header-center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -0.75em;
+}
+
+.chat-name {
+    color: #FFFFFF;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 0.4em 0 0.4em;
+}
+
+.chat-activity-status {
+    color: #FFFFFF;
+}
+
+.chat-icon {
+    display: block;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+}
+
+.chat-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: -1.1em;
+    padding-top: 0.25em;
+
+    overflow-x: visible; /* For identifying bugs, shouldn't do anything in working condition */
+    overflow-y: hidden;
+}
+
+.chat-body > * {
+    margin-top: 0.75em;
+}
+
+.texter-gc {
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+
+.texter-gc > * {
+    align-self: end;
+    margin: 0;
+}
+
+.texter-name {
+    color: #FFFFFF;
+    margin-top: 0em;
+    margin-left: 1em;
+    margin-bottom: 0em;
+}
+
+.texter-icon {
+    align-self: end;
+    display: block;
+    border-radius: 5em;
+    height: 2.4em;
+    margin-left: 0.2em; /* Why does this exist? */
+    margin-right: 0.5em;
+    width: 2.4em;
+}
+
+[class|="message-body"] * {
+    margin: 0; /* Do NOT remove this since this is necessary for the  */
+}
+
+[class|="message-body"] p:not(:has(img)) {
+    display: block;
+    clear: both;
+    border-radius: 1.1em;
+    padding: 0.7em 1em;
+    background-color: #F0F0F0;
+    color: #000000;
+    line-height: 1.4em;
+}
+
+/* FIXME: Why does the margin of the message body go left when it contains an image? (in AO3), not in html live server */
+/* Check latest screenshots */
+
+[class|="message-body"] img {
+    border-radius: 1.1em;
+    max-width: 15.5em;
+}
+
+[class|="message-body"] :not(:first-child):not(.texter-name) {
+    margin-top: 0.25em;
+}
+
+.message-body * {
+    float: left;
+}
+
+.message-body p {
+    max-width: 12em;
+}
+
+.message-body p:not(:last-child) {
+    border-bottom-left-radius: 0.25em;
+}
+
+.message-body p:not(:first-child) {
+    border-top-left-radius: 0.25em;
+}
+
+.message-body-right * {
+    float: right;
+}
+
+.message-body-right p:not(:has(img)) {
+    max-width: 14.25em;
+    background-color: #0099ff;
+    color: #ffffff;
+}
+
+.message-body-right p:not(:last-child) {
+    border-bottom-right-radius: 0.25em;
+}
+
+.message-body-right p:not(:first-child) {
+    border-top-right-radius: 0.25em;
+}
+
+.chat-actions {
+    color: #7B7C80;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+[class|="chat-read-receipt"] {
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.chat-read-receipt-left {
+    margin-left: 1em;
+    text-align: left;
+}
+
+.chat-read-receipt-left-gc {
+    margin-left: 3.75em;
+    text-align: left;
+}
+
+.chat-read-receipt-right {
+    margin-right: 0.75em;
+    text-align: right;
+}
+
+.chat-footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chat-footer * {
+    margin: 0;
+}
+
+.chat-footer::before {
+    content: "";
+    display: block;
+    height: 1em;
+    margin-top: -1em;
+    background-image: linear-gradient(transparent, black);
+}
+
+[class|="chat-textbox"] {
+    width: 100%;
+    color: #ffffff;
+    border: #ffffff2d solid 0.15em;
+    border-radius: 1.1em;
+    padding: 0.8em 1em;
+    text-align: left;
+}
+
+.chat-textbox-empty {
+    color: #a0a0a0;
+}
+
+/* Empty elements are cleared from AO3, so this won't work */
+/*
+.chat-textbox:empty::before {
+    content: "Start typing";
+    color: #a0a0a0;
+}
+*/
+
+.chat-ui-button-back {
+    height: 1.5em;
+    left: 0.5em;
+    position: absolute;
+    top: 0.25em;
+    width: auto;
+}
+
+.chat-ui-button-info {
+    height: 1.5em;
+    position: absolute;
+    right: 0.5em;
+    top: 0.25em;
+    width: auto;
+}
+
+.chat-ui-button-send {
+    height: 2em;
+    margin-left: 0.75em;
+    opacity: 0.35;
+}
