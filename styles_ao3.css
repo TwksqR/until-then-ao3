@@ -57,13 +57,18 @@
 }
 
 .chat-name {
-    color: #FFFFFF;
     font-size: 1.25em;
     font-weight: bold;
-    margin: 0.4em 0 0.4em;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    margin: 0.4em 0 0.4em 0;
+    padding: 0;
+    line-height: 1.4;
 }
 
 .chat-activity-status {
+    font-size: 1em;
     color: #FFFFFF;
 }
 
@@ -100,10 +105,14 @@
 }
 
 .texter-name {
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
     color: #FFFFFF;
-    margin-top: 0em;
-    margin-left: 1em;
-    margin-bottom: 0em;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    margin: 0 0 0 1em;
+    padding: 0;
+    line-height: 1.4;
 }
 
 .texter-icon {
