@@ -31,6 +31,10 @@ You can apply any font downloaded onto your device to your chats. In `styles.css
 
 The font used in Until Then's actual chats is **PT Sans**. You can download it [here](https://fonts.google.com/specimen/PT+Sans).
 
+# Showcase
+
+I've uploaded [a showcase of this stylesheet in action](https://archiveofourown.org/works/80788041/chapters/212214971) on AO3 so you can see how it looks. Hopefully it looks really awesome because I spent more time working on this than I probably should have lol
+
 # Extras
 
 Certain VS Code extensions can make the code editing process easier:
