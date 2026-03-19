@@ -78,13 +78,13 @@
     display: flex;
     flex-direction: column;
     margin-top: -1.1em;
-    padding-top: 0.25em;
+    padding-top: 1em;
 
     overflow-x: visible; /* For identifying bugs, shouldn't do anything in working condition */
     overflow-y: hidden;
 }
 
-.chat-body > * {
+.chat-body > :not(:first-child) {
     margin-top: 0.75em;
 }
 
