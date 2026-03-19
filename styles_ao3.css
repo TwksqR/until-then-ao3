@@ -144,6 +144,7 @@
 
 .message-body * {
     float: left;
+    margin-right: 2em;
 }
 
 .message-body p {
@@ -160,6 +161,7 @@
 
 .message-body-right * {
     float: right;
+    margin-left: 2em;
 }
 
 .message-body-right p:not(:has(img)) {
