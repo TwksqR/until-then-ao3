@@ -22,7 +22,7 @@
     height: 44em;
 }
 
-.scrollable > .chat-body {
+.scrollable > [class$="body"] {
     padding-bottom: 1em;
     scrollbar-width: none;
     overflow-y: scroll;
