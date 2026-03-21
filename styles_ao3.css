@@ -103,13 +103,21 @@
 
 .texter-gc {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    position: relative;
     float: left;
 }
 
 .texter-gc > * {
-    align-self: end;
+    position: relative;
+    left: 2.9em;
     margin: 0;
+}
+
+.texter-gc > :first-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .texter-name {
@@ -124,12 +132,9 @@
 }
 
 .texter-icon {
-    align-self: end;
     display: block;
     border-radius: 5em;
     height: 2.4em;
-    margin-left: 0.2em; /* Why does this exist? */
-    margin-right: 0.5em;
     width: 2.4em;
 }
 
