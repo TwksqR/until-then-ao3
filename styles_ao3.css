@@ -2,12 +2,36 @@
     border-radius: 0;
 }
 
+.spacer-1em {
+    height: 1em;
+}
+
 .hide {
     display: none;
 }
 
+.show {
+    display: initial;
+}
+
 .userstuff .hidden {
     display: block;
+}
+
+.message-force-corner-top-right {
+    border-top-right-radius: 0.25em !important;
+}
+
+.message-force-corner-bottom-right {
+    border-bottom-right-radius: 0.25em !important;
+}
+
+.message-force-corner-top-left {
+    border-top-left-radius: 0.25em !important;
+}
+
+.message-force-corner-bottom-left {
+    border-bottom-left-radius: 0.25em !important;
 }
 
 [class|="phone"] {
