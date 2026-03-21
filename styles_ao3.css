@@ -331,6 +331,14 @@
 }
 */
 
+.chat-typing-indicator {
+    position: absolute;
+    bottom: -1em;
+    left: 1em;
+    color: #FFFFFF;
+    text-align: left;
+}
+
 .chat-ui-button-back {
     height: 1.5em;
     left: 0.5em;
