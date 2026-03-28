@@ -311,17 +311,15 @@
     text-align: left;
 }
 
-.chat-textbox-empty {
-    color: #a0a0a0;
-}
-
-/* Empty elements are cleared from AO3, so this won't work */
-/*
+/* NOTE: Empty elements are cleared from AO3 */
 .chat-textbox:empty::before {
     content: "Start typing";
     color: #a0a0a0;
 }
-*/
+
+.chat-textbox-empty {
+    color: #a0a0a0;
+}
 
 .chat-typing-indicator {
     position: absolute;
