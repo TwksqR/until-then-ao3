@@ -42,6 +42,11 @@
     border-radius: 2em;
 }
 
+[class|="phone"] * {
+    margin: 0;
+    padding: 0;
+}
+
 .fixed[class|="phone"] {
     height: 44em;
 }
@@ -66,10 +71,6 @@
     position: relative;
     padding-bottom: 0.5em;
     z-index: 2;
-}
-
-.chat-header * {
-    margin: 0;
 }
 
 .chat-header::after {
@@ -158,7 +159,6 @@
 .texter-gc > * {
     position: relative;
     left: 2.9em;
-    margin: 0;
 }
 
 .texter-gc > :first-child {
@@ -173,7 +173,7 @@
     text-decoration: none;
     color: #FFFFFF;
     font-family: "PT Sans", Arial, Helvetica, sans-serif;
-    margin: 0 0 0 1em;
+    margin-left: 1em;
     padding: 0;
     line-height: 1.4;
 }
@@ -184,10 +184,6 @@
     height: 2.4em;
     margin-right: 0.5em;
     width: 2.4em;
-}
-
-[class|="message-body"] * {
-    margin: 0; /* Do NOT remove this since this is necessary for the  */
 }
 
 [class|="message-body"] p:not(:has(img)) {
@@ -257,7 +253,6 @@
 [class|="chat-read-receipt"] {
     position: relative;
     top: -0.3em;
-    margin: 0;
     color: #FFFFFF;
 }
 
@@ -290,10 +285,6 @@
     position: absolute;
     top: -1em;
     background-image: linear-gradient(transparent, black);
-}
-
-.chat-footer * {
-    margin: 0;
 }
 
 .chat-footer div {
