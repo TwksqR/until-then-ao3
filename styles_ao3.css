@@ -196,9 +196,6 @@
     line-height: 1.4em;
 }
 
-/* FIXME: Why does the margin of the message body go left when it contains an image? (in AO3), not in html live server */
-/* Check latest screenshots */
-
 [class|="message-body"] img {
     border-radius: 1.1em;
     max-width: 16em;
