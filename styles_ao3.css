@@ -42,12 +42,15 @@
     border-radius: 2em;
 }
 
-.scrollable[class|="phone"] {
+.fixed[class|="phone"] {
     height: 44em;
 }
 
-.scrollable > [class$="body"] {
-    padding-bottom: 1em;
+.fixed > [class$="body"] {
+    overflow: hidden;
+}
+
+.scrollable {
     scrollbar-width: none;
     overflow-y: scroll;
 }
@@ -115,8 +118,9 @@
     flex-direction: column;
 }
 
-.scrollable .chat-body {
+.chat-body.scrollable {
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 /* TODO: Try making this work */
@@ -275,10 +279,6 @@
 .chat-footer {
     position: relative;
     padding-bottom: 0.5em;
-}
-
-:not(.scrollable) > .chat-footer {
-    margin-top: 1em;
 }
 
 /* FIXME: fix the extra space when footer is by itself (e.g. the "Cathy is typing..." part in Mate in 4) */
