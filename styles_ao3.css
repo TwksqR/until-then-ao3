@@ -250,6 +250,10 @@
     font-size: 0.8em;
 }
 
+.chat-actions :not(:first-child) {
+    margin-top: 0.75em;
+}
+
 [class|="chat-read-receipt"] {
     position: relative;
     top: -0.3em;
