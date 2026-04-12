@@ -310,7 +310,8 @@
     font-size: 3em;
 }
 
-.chat-actions {
+.chat-action {
+    padding: 0.4em 0;
     color: #7B7C80;
     text-align: center;
     font-size: 0.8em;
