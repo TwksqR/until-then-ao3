@@ -18,6 +18,27 @@
     display: block;
 }
 
+.change-on-hover {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.change-on-hover .original {
+    display: inline;
+}
+
+.replacement {
+  display: none;
+}
+
+.change-on-hover:hover .original {
+  display: none;
+}
+
+.change-on-hover:hover .replacement {
+  display: inline;
+}
+
 .message-force-corner-top-right {
     border-top-right-radius: 0.25em !important;
 }
