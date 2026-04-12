@@ -114,6 +114,32 @@
     border-radius: 50%;
 }
 
+.chat-icon-gc {
+    position: relative;
+    display: block;
+    height: 4em;
+    width: 4em;
+}
+
+.chat-icon-gc * {
+    position: absolute;
+    display: inline;
+    height: 2.8em;
+    width: 2.8em;
+    border-radius: 50%;
+}
+
+.chat-icon-gc > :nth-child(1) {
+    top: 0em;
+    left: 0em;
+}
+
+.chat-icon-gc > :nth-child(2) {
+    right: 0em;
+    bottom: 0em;
+    border: 0.15em solid black;
+}
+
 .chat-body {
     display: flex;
     flex-direction: column;
