@@ -261,7 +261,7 @@
     margin-right: 2em;
 }
 
-.message-body p {
+.message-body p:not(:has(img)) {
     max-width: 12em;
     background-color: #F0F0F0;
     color: #000000;
