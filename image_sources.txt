@@ -1,0 +1,31 @@
+All images (and extras) can be found at https://images.squidge.org/album/xeOla
+
+Profile Pictures
+
+Default: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/29/pfp_default.th.png
+Default 1: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/pfp_default.th.png
+Default Male: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/29/pf_default_male.th.png
+Default Female: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/29/pfp_default_female.th.png
+9-Pearl: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/29/pfp_9_pearl.th.png
+Angel: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/angel_pfp.th.png
+Cathy: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/cathy_pfp.th.png
+Edward: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/edward_pfp.th.png
+Jessica: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/jessica_pfp.th.png
+Justin: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/29/pfp_justin_valencia.th.png
+Khyle: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/29/pfp_khyle_paredes.th.png
+Louise: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/louise_pfp.th.png
+Mark: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/mark_pfp.th.png
+MCR: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/29/pfp_mcr.th.png
+Mike: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/29/pfp_mike_aguilar.th.png
+Nicole: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/nicole_pfp.th.png
+Ridel: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/ridel_pfp.th.png
+Ridel 1: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/29/pfp_ridel_gonzalez_1.th.png
+Ryan: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/ryan_pfp.th.png
+Sam: https://images.squidge.org/images/2026/04/12/samantha_pfp.th.png
+Sofia: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/sofia_pfp.th.png
+
+Icons
+
+Back: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/icon_back.th.png
+Info: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/icon_info.th.png
+Send: https://squidgeimages.s3.us-west-002.backblazeb2.com/2026/03/20/icon_send.th.png
