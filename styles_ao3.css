@@ -303,6 +303,13 @@
     text-decoration: underline;
 }
 
+.chat-emoji {
+    padding: 0 !important;
+    margin: 0.1em 0 0 0 !important;
+    background-color: transparent !important;
+    font-size: 3em;
+}
+
 .chat-actions {
     color: #7B7C80;
     text-align: center;
