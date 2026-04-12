@@ -353,6 +353,16 @@
     top: 0em;
 }
 
+.chat-ui-button-back:hover {
+    height: 1.5em;
+    position: absolute;
+    top: -0.4em;
+    left: -0.4em;
+    padding: 0.4em;
+    border-radius: 0.5em;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
 .chat-ui-button-info {
     height: 1.5em;
     position: absolute;
@@ -360,8 +370,24 @@
     right: 0.25em;
 }
 
+.chat-ui-button-info:hover {
+    height: 1.5em;
+    position: absolute;
+    top: -0.4em;
+    right: -0.15em;
+    padding: 0.4em;
+    border-radius: 0.5em;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
 .chat-ui-button-send {
     height: 2em;
     margin-left: 0.75em;
     opacity: 0.35;
+}
+
+.chat-ui-button-send:hover {
+    height: 2em;
+    margin-left: 0.75em;
+    opacity: 1;
 }
