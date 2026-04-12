@@ -368,7 +368,7 @@
     width: 100%;
     padding: 0.8em 1em;
     color: #ffffff;
-    border: #ffffff2d solid 0.1em;
+    border: rgba(255, 255, 255, 0.25) solid 0.1em;
     border-radius: 1.1em;
     text-align: left;
 }
