@@ -217,8 +217,6 @@
     clear: both;
     border-radius: 1.1em;
     padding: 0.7em 1em;
-    background-color: #F0F0F0;
-    color: #000000;
     line-height: 1.4em;
 }
 
@@ -238,6 +236,8 @@
 
 .message-body p {
     max-width: 12em;
+    background-color: #F0F0F0;
+    color: #000000;
 }
 
 .message-body p:not(:last-child) {
