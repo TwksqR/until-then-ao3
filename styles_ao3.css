@@ -240,10 +240,10 @@
 
 [class|="message-body"] p:not(:has(img)) {
     display: block;
-    clear: both;
     border-radius: 1.1em;
     padding: 0.7em 1em;
     line-height: 1.4em;
+    clear: both;
 }
 
 [class|="message-body"] img {
