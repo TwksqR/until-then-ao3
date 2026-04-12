@@ -256,7 +256,7 @@
     margin-top: 0.25em;
 }
 
-.message-body * {
+.message-body > * {
     float: left;
     margin-right: 2em;
 }
@@ -275,7 +275,7 @@
     border-top-left-radius: 0.25em;
 }
 
-.message-body-right * {
+.message-body-right > * {
     float: right;
     margin-left: 2em;
 }
