@@ -294,6 +294,15 @@
     border-top-right-radius: 0.25em;
 }
 
+.chat-mention {
+    font-weight: bold;
+}
+
+.chat-mention:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .chat-actions {
     color: #7B7C80;
     text-align: center;
